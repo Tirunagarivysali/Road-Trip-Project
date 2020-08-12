@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="addnewtrips.css">
+</head>
+<body>
+<div style="font-size:25px">
+
+<form action="addnewtrips.php" method="post" enctype="multipart/form-data">
+    <h3>Trip Route:</h3>
+  <div class="container">
+    <table>
+      <tr><td><b>Select Trip image:</b></td>
+          <td><input type="file"  id="fileToUpload" name="fileToUpload"/></td></tr>
+          <tr><td><label for="iname"><b>Image name:</b></label></td>
+          <td><input type="text" style="width:250px" placeholder="image name" id="iname" name="iname" required></td></tr>
+          <tr><td><b>Upload Trip map:</b></td>
+              <td><input type="file"  id="tripmap" name="tripmap"/></td></tr>
+              <tr><td><label for="mapname"><b>Trip map name:</b></label></td>
+              <td><input type="text" style="width:250px" placeholder="Trip map name" id="mapname" name="mapname" required></td></tr>
+    <tr><td><label for="start"><b>Road Trip:</b></label></td>
+    <td><input type="text" style="width:250px" placeholder="Place" id="start" name="start" required></td></tr>
+    <tr><td><label for="distance"><b>Distance:</b></label></td>
+    <td><input type="text" style="width:250px" placeholder="Distance" id="distance" name="distance" required></td></tr>
+  <tr><td><b>Rate this trip</b></td><td><input type="radio" id="excellent" name="ratethisplace" value="excellent">
+  <label for="excellent"><b>Excellent</b></label>
+  <input type="radio" id="good" name="ratethisplace" value="good">
+  <label for="good"><b>Good</b></label>
+  <input type="radio" id="average" name="ratethisplace" value="average">
+  <label for="average"><b>Average</b></label>
+  <input type="radio" id="bad" name="ratethisplace" value="bad">
+  <label for="bad"><b>Bad</b></label></td></tr>
+  <tr><td><label for="review"><b>Review</b></label></td>
+  <td><input type="text" style="height:150px;width:300px" placeholder="write your reviews about this Trip" id="review" name="review" required></td></tr>
+
+</table>
+</div>
+<div class="container" style="background-color:#f1f1f1">
+  <button type="submit" class="subbutton">upload</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>

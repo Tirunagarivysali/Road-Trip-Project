@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="signup.css">
+  <script type="text/javascript">
+     function  fun1()
+    {
+    var mail=document.getElementById("email").value;
+    var regexp=/^[A-Za-z0-9.+-_]+@[A-Za-z.+-_]+\.[A-Za-z]+$/;
+    if(regexp.test(mail))
+    document.getElementById("call").innerHTML="valid emailId";
+    else
+      document.getElementById("call").innerHTML="invalid emailId";
+  }
+
+    </script>
+  </head>
+<body>
+
+<form  method="post" action="signup.php" style="border:1px solid #ccc">
+  <div class="container">
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" onblur="fun1()" required>
+    <p id="call"></p>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" pattern=[A-Za-z0-9]{8} title="8 character password,no special characters allowed" name="psw" id="psw" required>
+
+        <label for="finame"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="finame" id="finame" required>
+
+            <label for="laname"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="laname" id="laname" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="termsandprivacy.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
