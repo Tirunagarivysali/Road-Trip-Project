@@ -21,7 +21,7 @@ if(isset($_POST['rating']) and isset($_POST['name']) and isset($_POST['comments'
   {
     echo "I appreciate you in investing time for improving us.Thank you ".$pname." for your feedback.";
     echo '<form action="mainwebpage.html">';
-    echo "<br>"
+    echo "<br>";
     echo "Have a look at interesting places to go for  Road trip.";
     echo '<button type="submit">Click to continue</button>';
     echo "</form>";
